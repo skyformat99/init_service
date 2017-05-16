@@ -1,0 +1,5 @@
+1、service name文件的内容有限制，一行只能为service name开头和结尾，service name之间只能以逗号分隔，具体可参考serviceName_sample.txt
+2、service name文件必须与init_service.sh在同一目录，不在同一目录，需要将service name的文件拷贝到init_service.sh所在的目录
+3、需要5个参数:serviceName的文件名 数据库地址 数据库连接用户名 数据库密码 数据库，5个参数缺一不可，顺序也不能改变
+4、使用方式:./startup.sh serviceName文件名 数据库地址 数据库连接用户名 数据库连接密码 数据库
+	例如：vm195157:/disk/slbadmin/serviceName # ./startup.sh serviceName.txt 192.168.195.157 slbadmin 123456 slbadmin_db
